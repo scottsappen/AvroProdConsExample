@@ -1,0 +1,15 @@
+{
+     "type": "record",
+     "namespace": "com.github.scotts.avro",
+     "name": "ClimbingGym",
+     "doc": "Avro Schema for a Climbing Gym - version 1",
+     "fields": [
+       { "name": "gym_name", "type": "string", "doc": "Name of Climbing Gym" },
+       { "name": "gym_nickname", "type": "string", "doc": "Nick Name of Climbing Gym" },
+       { "name": "location", "type": "string", "doc": "Location of the Climbing Gym" },
+       { "name": "hastopropeclimbing", "type": "boolean", "default": true, "doc": "Field indicating if the climbing gym offers top rope climbing" },
+       { "name": "hasleadclimbing", "type": "boolean", "default": false, "doc": "Field indicating if the climbing gym offers lead climbing" },
+       { "name": "hasbouldering", "type": "boolean", "default": true, "doc": "Field indicating if the climbing gym offers bouldering" },
+       { "name": "hasspeedclimbing", "type": "boolean", "default": false, "doc": "Field indicating if the climbing gym offers speed climbing" }
+        ]
+}
