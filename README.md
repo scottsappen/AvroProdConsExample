@@ -23,9 +23,13 @@ and delete the last boolean about speed climbing (see schemaevolved directory fo
 Use maven/clean package to again turn your evolved Avro schema into a class.
 
 Step 4<br/>
+In AvroJavaProducerv2, uncomment this line: 
+<br/>
+//climbingGymBuilder.setSquarefeet(7000);
+<br/>
 Run java producer and consumer from v2 package to produce a few messages, consume them and observe the full compatibility.
 
-Tip: remember Confluent packages some command line tooling you can use as a quick and dirty consumer as well.
+*Tip*: remember Confluent packages some command line tooling you can use as a quick and dirty consumer as well.
 <br/>
 $ ./kafka-avro-console-consumer  --bootstrap-server localhost:9092 --topic climbinggym --from-beginning
 

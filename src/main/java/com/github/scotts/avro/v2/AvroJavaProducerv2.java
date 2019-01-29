@@ -29,7 +29,7 @@ public class AvroJavaProducerv2 {
         climbingGymBuilder.setHastopropeclimbing(true);
         climbingGymBuilder.setHasleadclimbing(true);
         climbingGymBuilder.setHasbouldering(true);
-        climbingGymBuilder.setSquarefeet(7000);
+        //climbingGymBuilder.setSquarefeet(7000);
         ClimbingGym climbingGym = climbingGymBuilder.build();
 
         ProducerRecord<String, ClimbingGym> producerRecord = new ProducerRecord<String, ClimbingGym>(
