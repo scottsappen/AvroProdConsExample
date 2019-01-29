@@ -38,6 +38,8 @@ In AvroJavaProducerv2, uncomment this line:
 ```
 Run java producer from the v2 package and consumer from the v1 package to produce a few messages, consume them and observe the full compatibility.
 
+Note: you can change the consumer group.id to re-read all the older messages
+
 **Tip**
 <br/>Remember Confluent packages some command line tooling you can use as a quick and dirty consumer as well.
 <br/>
