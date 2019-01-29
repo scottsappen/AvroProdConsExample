@@ -36,7 +36,7 @@ In AvroJavaProducerv2, uncomment this line:
 ```java
 //climbingGymBuilder.setSquarefeet(7000);
 ```
-Run java producer and consumer from v2 package to produce a few messages, consume them and observe the full compatibility.
+Run java producer from the v2 package and consumer from the v1 package to produce a few messages, consume them and observe the full compatibility.
 
 **Tip**
 <br/>Remember Confluent packages some command line tooling you can use as a quick and dirty consumer as well.
@@ -51,7 +51,6 @@ $ ./kafka-avro-console-consumer  --bootstrap-server localhost:9092 --topic climb
 org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
 ```
 This probably means your producer is not able to talk to the brokers, make sure you set the properties correctly.
-<br/>
 <br/>
 ```java
 org.apache.kafka.common.errors.SerializationException: Error registering Avro schema:
