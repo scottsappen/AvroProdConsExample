@@ -29,6 +29,7 @@ Tip: remember Confluent packages some command line tooling you can use as a quic
 $ ./kafka-avro-console-consumer  --bootstrap-server localhost:9092 --topic climbinggym --from-beginning
 
 **Common Exceptions**
+
 org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.<br/>
 This probably means your producer is not able to talk to the brokers, make sure you set the properties correctly.
 <br/>
