@@ -1,4 +1,4 @@
-package com.github.scotts.avro.v1;
+package com.github.scotts.avro.v2;
 
 import com.github.scotts.avro.ClimbingGym;
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
@@ -7,7 +7,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
 
-public class AvroJavaProducer {
+public class AvroJavaProducerv2 {
 
     public static void main(String[] args) {
 
@@ -29,7 +29,7 @@ public class AvroJavaProducer {
         climbingGymBuilder.setHastopropeclimbing(true);
         climbingGymBuilder.setHasleadclimbing(true);
         climbingGymBuilder.setHasbouldering(true);
-        //climbingGymBuilder.setHasspeedclimbing(true);
+        climbingGymBuilder.setSquarefeet(7000);
         ClimbingGym climbingGym = climbingGymBuilder.build();
 
         ProducerRecord<String, ClimbingGym> producerRecord = new ProducerRecord<String, ClimbingGym>(
